@@ -1,0 +1,459 @@
+// px:rem
+// 1rem = 0.05px
+// .px2rem{
+//     height: px2rem(40); // out 2rem
+// }
+
+//for vue
+[v-cloak] {
+    display: none !important;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 14px/1.5 "PingFang SC", "Microsoft YaHei", "hei", "Heiti SC", "Lucida Grande", Verdana, STXhei
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+iframe {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul,
+ol,
+ul li,
+ol li {
+    list-style: none;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+}
+
+body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: $color-main;
+    background-color: $color-body-bg;
+}
+
+a {
+    color: $color-global;
+}
+
+:focus {
+    outline: none;
+}
+
+img {
+    border: 0 none;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+form {
+    width: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+.highlight {
+    color: $color-highlight !important;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cl {
+    clear: both;
+}
+
+.text-l {
+    text-align: left;
+}
+
+
+.text-c {
+    text-align: center;
+}
+
+.text-r {
+    text-align: right;
+}
+
+.avatar {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* buttons */
+.button-normal {
+    display: inline-block;
+    font-size: 18px;
+    width: 100%;
+    line-height: px2rem(35);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.button-green {
+    background-color: $color-highlight;
+    color: #fff;
+}
+
+.button-disable {
+    opacity: 0.6;
+}
+
+// common
+// 带颜色块的提示信息
+.lc-tip {
+    font-size: 14px;
+    padding: px2rem(10) px2rem(10);
+    // border-bottom: 1px solid #e7e7e7;
+
+    .block {
+        width: px2rem(4);
+        height: px2rem(18);
+        display: inline-block;
+        margin-right: px2rem(4);
+        background-color: #72b81e;
+        position: relative;
+        top: 2px;
+    }
+    .shallow{
+        color: #666;
+    }
+}
+
+.error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    img {
+        width: px2rem(180);
+        height: px2rem(155);
+    }
+
+    p {
+        color: #999999;
+        margin-top: px2rem(20);
+    }
+}
+
+.submit-btn {
+    width: 100%;
+    height: px2rem(50);
+    line-height: px2rem(50);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    outline: none;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    background-color: $color-highlight;
+}
+.submit-btn-draw{
+    display: inline-block;
+    width: px2rem(119);
+    height: px2rem(30);
+    line-height: px2rem(30);
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgba(115, 184, 31, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+}
+.submit-btn-tint {
+    width: 100%;
+    height: px2rem(50);
+    line-height: px2rem(50);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    outline: none;
+    padding: 0;
+    border: 0;
+    background-color: #BCBBBB;
+}
+.submit-btn-1 {
+    width: 88%;
+    margin: 0 auto;
+    position: fixed;
+    height: px2rem(40);
+    line-height: px2rem(40);
+    bottom: px2rem(10);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+    padding: 0;
+    background-color: $color-highlight;
+}
+
+.lc-tips {
+    background-color: #ffd46c;
+    padding: px2rem(7.5) px2rem(12.5);
+    margin: px2rem(14) px2rem(12.5);
+    border-radius: 3px;
+    font-size: 13px !important;
+
+    p {
+        color: #d07500;
+        padding-bottom: px2rem(5);
+    }
+}
+
+.btn-wrap {
+    display: flex;
+    position: fixed;
+    bottom: px2rem(20);
+    left: 50%;
+    width: 89%;
+    transform: translateX(-50%);
+
+    button {
+        flex: 1;
+        width: 100%;
+        height: px2rem(40);
+        font-size: 16px;
+        color: #fff;
+        border-radius: 25px;
+        padding: 0;
+        background-color: $color-highlight;
+    }
+
+    button:nth-child(1) {
+        margin-right: px2rem(25);
+    }
+}
+// title场次
+
+.period{
+    background: #F0676C;
+    color: #ffffff;
+    width: px2rem(293);
+    height: px2rem(44);
+    line-height: px2rem(44);
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 0px 0px rgba(170, 170, 170, 1);
+    margin: 6px auto;
+}
+input, textarea{  
+    background:none;  
+    outline:none;  
+    border:none;
+    text-align: right;
+}
+// 左右模式
+.yh-group{
+    display: flex;
+    justify-content: space-between;
+    color: #828282;
+    font-size: 14px;
+    border-bottom: 1px solid #BBBBBB;
+    padding: px2rem(10);
+    // height: px2rem(44);
+    .l{
+        font-size: 16px;
+        color: #101010;
+    }
+    i{
+        padding-left: px2rem(5);
+    }
+    /* css */
+    .textarea-wrapper{
+        position: relative;
+        min-height : 20px;
+        width: px2rem(150);
+    }
+    .content{
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        color: #333333;
+        line-height: 2;
+        word-wrap:break-word;
+        padding: 0;
+        text-align: right;
+    }
+    .textarea-wrapper textarea{
+        overflow:hidden;
+        resize:none;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        font-size: 14px;
+        color: #333333;
+        line-height: 2;
+        padding: 0px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+// 上下
+.yh-group-bolster{
+    padding: px2rem(10);
+    color: #101010;
+    font-size: 16px;
+    border-bottom: 1px solid#bbbbbb;
+    .t{
+        margin-bottom: px2rem(5);
+        span{
+            color:#bbbbbb;
+            font-size: 14px;
+        }
+    }
+    textarea{
+        text-align: left;
+        width: 100%;
+        height: 80px;
+    }
+}
+
+.jiajian{
+    width: 45%;
+    text-align: right;
+    padding-right: px2rem(5);
+    .feedin{
+        border: 1px solid #828282;
+        width: 30%;
+        text-align: center;
+    }
+    i{
+        padding: 0 px2rem(5);
+        font-size: 20px;
+    }
+}
+
+.integral{
+    padding: 0 px2rem(10);
+    color: #828282;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+// 票证列表
+.ticketlist{
+    overflow: hidden;
+    padding: 0 px2rem(13);
+    padding-bottom: px2rem(22);
+    .ticketleft{
+        float: left;
+        width: 69%;
+        border-right: 1px solid #bbbbbb;
+        p:first-child{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        p:nth-child(2){
+            padding: px2rem(10) 0 px2rem(5) 0;
+        }
+    }
+    .ticketright{
+        float: right;
+        width: 30%;
+        text-align: center;
+        p:first-child{
+            font-size: 12px;
+            padding: px2rem(20) 0 0 0;
+        }
+        span{
+            display: inline-block;
+            margin: 8px;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 4px;
+            background-color: rgba(139, 195, 74, 1);
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+        }
+    }
+}

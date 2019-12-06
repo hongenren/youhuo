@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 1542429 */
+    src: url('//at.alicdn.com/t/font_1542429_iekqz7luzm.eot');
+    src: url('//at.alicdn.com/t/font_1542429_iekqz7luzm.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1542429_iekqz7luzm.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1542429_iekqz7luzm.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1542429_iekqz7luzm.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1542429_iekqz7luzm.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    vertical-align: middle;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+// 删除
+.icon-shanchu:before {
+    content: "\e694";
+}
+// 搜素
+.icon-search:before {
+    content: "\e627";
+}
+// 对勾
+.icon-duigou:before {
+    content: "\e613";
+}
+// 加号
+.icon-jiahao:before {
+    content: "\e81a";
+}
+// 圆圈加号
+.icon-add:before {
+    content: "\e762";
+}
+// jian号
+.icon-jianhao:before {
+    content: "\e629";
+}
+// 右箭头
+.icon-youjiantou:before {
+    content: "\e621";
+}
+// 问号icon-wenhao
+.icon-wenhao:before {
+    content: "\e648";
+}
